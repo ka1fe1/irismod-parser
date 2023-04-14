@@ -1,6 +1,7 @@
 package msgs
 
 import (
+	upticknft "github.com/UptickNetwork/uptick/x/collection/types"
 	evm "github.com/evmos/ethermint/x/evm/types"
 	coinswap "github.com/irisnet/irismod/modules/coinswap/types"
 	farm "github.com/irisnet/irismod/modules/farm/types"
@@ -119,6 +120,14 @@ type (
 	MsgNFTBurn       = nft.MsgBurnNFT
 	MsgIssueDenom    = nft.MsgIssueDenom
 	MsgTransferDenom = nft.MsgTransferDenom
+
+	//TODO uptick nft
+	MsgUptickNFTMint       = upticknft.MsgMintNFT
+	MsgUptickNFTEdit       = upticknft.MsgEditNFT
+	MsgUptickNFTTransfer   = upticknft.MsgTransferNFT
+	MsgUptickNFTBurn       = upticknft.MsgBurnNFT
+	MsgUptickIssueDenom    = upticknft.MsgIssueDenom
+	MsgUptickTransferDenom = upticknft.MsgTransferDenom
 
 	//oracle
 	MsgCreateFeed = oracle.MsgCreateFeed
