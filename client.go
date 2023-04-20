@@ -4,6 +4,8 @@ import (
 	. "github.com/kaifei-bianjie/common-parser"
 	"github.com/kaifei-bianjie/irismod-parser/codec"
 	"github.com/kaifei-bianjie/irismod-parser/modules/coinswap"
+	"github.com/kaifei-bianjie/irismod-parser/modules/collection"
+	"github.com/kaifei-bianjie/irismod-parser/modules/erc20"
 	"github.com/kaifei-bianjie/irismod-parser/modules/evm"
 	"github.com/kaifei-bianjie/irismod-parser/modules/farm"
 	"github.com/kaifei-bianjie/irismod-parser/modules/htlc"
@@ -17,32 +19,36 @@ import (
 )
 
 type MsgClient struct {
-	Coinswap Client
-	Farm     Client
-	Htlc     Client
-	Mt       Client
-	Nft      Client
-	Oracle   Client
-	Random   Client
-	Record   Client
-	Service  Client
-	Token    Client
-	Evm      Client
+	Coinswap  Client
+	Farm      Client
+	Htlc      Client
+	Mt        Client
+	Nft       Client
+	Oracle    Client
+	Random    Client
+	Record    Client
+	Service   Client
+	Token     Client
+	Evm       Client
+	UptickNft Client
+	Erc20     Client
 }
 
 func NewMsgClient() MsgClient {
 	codec.MakeEncodingConfig()
 	return MsgClient{
-		Coinswap: coinswap.NewClient(),
-		Farm:     farm.NewClient(),
-		Htlc:     htlc.NewClient(),
-		Mt:       mt.NewClient(),
-		Nft:      nft.NewClient(),
-		Oracle:   oracle.NewClient(),
-		Random:   random.NewClient(),
-		Record:   record.NewClient(),
-		Service:  service.NewClient(),
-		Token:    token.NewClient(),
-		Evm:      evm.NewClient(),
+		Coinswap:  coinswap.NewClient(),
+		Farm:      farm.NewClient(),
+		Htlc:      htlc.NewClient(),
+		Mt:        mt.NewClient(),
+		Nft:       nft.NewClient(),
+		Oracle:    oracle.NewClient(),
+		Random:    random.NewClient(),
+		Record:    record.NewClient(),
+		Service:   service.NewClient(),
+		Token:     token.NewClient(),
+		Evm:       evm.NewClient(),
+		UptickNft: collection.NewClient(),
+		Erc20:     erc20.NewClient(),
 	}
 }

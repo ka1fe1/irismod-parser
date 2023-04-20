@@ -3,6 +3,7 @@ module github.com/kaifei-bianjie/irismod-parser
 go 1.18
 
 require (
+	github.com/UptickNetwork/uptick v0.2.6
 	github.com/cosmos/cosmos-sdk v0.46.9
 	github.com/evmos/ethermint v0.20.0
 	github.com/irisnet/irismod v1.7.3
@@ -150,7 +151,6 @@ require (
 
 replace (
 	github.com/cosmos/cosmos-sdk => github.com/bianjieai/cosmos-sdk v0.46.5-irita-20221201
-	github.com/evmos/ethermint => github.com/bianjieai/ethermint v0.20.0-irishub-1
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	github.com/tendermint/tendermint => github.com/bianjieai/tendermint v0.34.22-irita-221107
 )

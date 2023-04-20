@@ -1,6 +1,8 @@
 package msgs
 
 import (
+	upticknft "github.com/UptickNetwork/uptick/x/collection/types"
+	uptickerc20 "github.com/UptickNetwork/uptick/x/erc20/types"
 	evm "github.com/evmos/ethermint/x/evm/types"
 	coinswap "github.com/irisnet/irismod/modules/coinswap/types"
 	farm "github.com/irisnet/irismod/modules/farm/types"
@@ -80,6 +82,10 @@ const (
 	MsgTypeSwapFeeToken       = "swap_fee_token"
 	MsgTypeTransferTokenOwner = "transfer_token_owner"
 	MsgTypeEthereumTx         = "ethereum_tx"
+
+	//erc20
+	MsgTypeConvertERC20 = "convert_erc20"
+	MsgTypeConvertCoin  = "convert_coin"
 )
 
 type (
@@ -119,6 +125,18 @@ type (
 	MsgNFTBurn       = nft.MsgBurnNFT
 	MsgIssueDenom    = nft.MsgIssueDenom
 	MsgTransferDenom = nft.MsgTransferDenom
+
+	//TODO uptick nft
+	MsgUptickNFTMint       = upticknft.MsgMintNFT
+	MsgUptickNFTEdit       = upticknft.MsgEditNFT
+	MsgUptickNFTTransfer   = upticknft.MsgTransferNFT
+	MsgUptickNFTBurn       = upticknft.MsgBurnNFT
+	MsgUptickIssueDenom    = upticknft.MsgIssueDenom
+	MsgUptickTransferDenom = upticknft.MsgTransferDenom
+
+	//ERC20
+	MsgConvertCoin  = uptickerc20.MsgConvertCoin
+	MsgConvertERC20 = uptickerc20.MsgConvertERC20
 
 	//oracle
 	MsgCreateFeed = oracle.MsgCreateFeed

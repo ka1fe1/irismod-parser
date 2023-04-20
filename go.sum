@@ -87,8 +87,6 @@ github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816 h1:41iFGWnSlI2
 github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
 github.com/bianjieai/cosmos-sdk v0.46.5-irita-20221201 h1:PBreZOgsMBKF8vCC/+K55ec06XXlNGPfai9WCAsXWsI=
 github.com/bianjieai/cosmos-sdk v0.46.5-irita-20221201/go.mod h1:/VThRDIKQ/D7XpFBvZHRHTntxHFRGYShz4TTHsZW/rw=
-github.com/bianjieai/ethermint v0.20.0-irishub-1 h1:Wp/5xV5JVcPO4HCYMKOE6ks+QForncsghrloT0nqIek=
-github.com/bianjieai/ethermint v0.20.0-irishub-1/go.mod h1:6GwJlPogJh9aiWrDGNIOIQ0fX2Lo3Tc7sTvrSe+BFL4=
 github.com/bianjieai/nft-transfer v1.1.1-beta h1:qONuNlwmTBvUAkZRfGS2imxkOMPC5dlfAHUQHyPs60Y=
 github.com/bianjieai/tendermint v0.34.22-irita-221107 h1:LiFs3jH72dOh+wyF5MQE3RtU9qh429naGVP9xi3EJwg=
 github.com/bianjieai/tendermint v0.34.22-irita-221107/go.mod h1:8ruxLM15hv1mPcrvETcq/4dnwMG4jpkhCu8jrp0pd2c=
@@ -185,6 +183,8 @@ github.com/envoyproxy/go-control-plane v0.9.9-0.20201210154907-fd9021fe5dad/go.m
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
 github.com/ethereum/go-ethereum v1.10.26 h1:i/7d9RBBwiXCEuyduBQzJw/mKmnvzsN14jqBmytw72s=
 github.com/ethereum/go-ethereum v1.10.26/go.mod h1:EYFyF19u3ezGLD4RqOkLq+ZCXzYbLoNDdZlMt7kyKFg=
+github.com/evmos/ethermint v0.20.0 h1:WNRxhCeGiL9Itl4vWalNYMRqkrV8IarnJn0iPJywFso=
+github.com/evmos/ethermint v0.20.0/go.mod h1:6GwJlPogJh9aiWrDGNIOIQ0fX2Lo3Tc7sTvrSe+BFL4=
 github.com/facebookgo/ensure v0.0.0-20200202191622-63f1cf65ac4c h1:8ISkoahWXwZR41ois5lSJBSVw4D0OV19Ht/JSTzvSv0=
 github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 h1:JWuenKqqX8nojtoVVWjGfOF9635RETekkoH6Cc9SX0A=
 github.com/facebookgo/subset v0.0.0-20200203212716-c811ad88dec4 h1:7HZCaLC5+BZpmbhCOZJ293Lz68O7PYrF2EzeiFMwCLk=
