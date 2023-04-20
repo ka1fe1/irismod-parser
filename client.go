@@ -5,6 +5,7 @@ import (
 	"github.com/kaifei-bianjie/irismod-parser/codec"
 	"github.com/kaifei-bianjie/irismod-parser/modules/coinswap"
 	"github.com/kaifei-bianjie/irismod-parser/modules/collection"
+	"github.com/kaifei-bianjie/irismod-parser/modules/erc20"
 	"github.com/kaifei-bianjie/irismod-parser/modules/evm"
 	"github.com/kaifei-bianjie/irismod-parser/modules/farm"
 	"github.com/kaifei-bianjie/irismod-parser/modules/htlc"
@@ -30,6 +31,7 @@ type MsgClient struct {
 	Token     Client
 	Evm       Client
 	UptickNft Client
+	Erc20     Client
 }
 
 func NewMsgClient() MsgClient {
@@ -47,5 +49,6 @@ func NewMsgClient() MsgClient {
 		Token:     token.NewClient(),
 		Evm:       evm.NewClient(),
 		UptickNft: collection.NewClient(),
+		Erc20:     erc20.NewClient(),
 	}
 }
